@@ -1,14 +1,17 @@
+
 import React from 'react';
-import './App.css';
-import NewsPage from './components/NewsPage'
-import UserPage from './components/UserPage'
-import SideBar from './components/SideBar'
-import MemoriesPage from './components/memories/MemoriesPage'
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
+import NewsPage from './components/NewsPage'
+import UserPage from './components/UserPage'
+import SideBar from './components/SideBar'
+import PointsPage from './components/points/PointsPage'
+import MemoriesPage from './components/memories/MemoriesPage'
+import EventsPage from './components/events/EventsPage'
+import './App.css';
 
 
 function App() {
@@ -26,6 +29,12 @@ function App() {
             </Route>
             <Route path='/memories'>
               <MemoriesPage />
+            </Route>
+            <Route path='/points'>
+              <PointsPage />
+            </Route>
+            <Route path='/events'>
+              <EventsPage />
             </Route>
           </Switch>
         </div>

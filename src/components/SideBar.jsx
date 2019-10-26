@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import ava from '../img/ava.png'
 import coin from '../img/coin.png'
 import like from '../img/like.png'
-import karaoke from '../img/karaoke.png'
 import photography from '../img/photography.png'
 import rnr from '../img/rock-and-roll.png'
 
@@ -20,19 +19,16 @@ export default class SideBar extends Component {
                                 <Link to="/me"><img src={ava} class="icon" style={{borderRadius: '100px' }} />My music</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to="/"><img src={coin} class="icon" />225 points</Link>
+                                <Link to="/points"><img src={coin} class="icon" />225 points</Link>
                             </li>
                             <li class="nav-item">
                                 <Link to="/"><img src={like} class="icon" />For you</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to="/"><img src={karaoke} class="icon" />Karaoke</Link>
-                            </li>
-                            <li class="nav-item">
                                 <Link to="/memories"><img src={photography} class="icon" />Memories</Link>
                             </li>
                             <li class="nav-item">
-                                <Link to="/"><img src={rnr} class="icon" />Events</Link>
+                                <Link to="/events"><img src={rnr} class="icon" />Events</Link>
                             </li>
                         </ul>
                     </nav>
